@@ -1,0 +1,64 @@
+/* Фон */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("mas.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+/* Обёртка кнопок и текста */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  gap: 20px; /* расстояние между элементами */
+  margin-top: 50px;
+}
+
+/* Кнопки */
+.button {
+  display: block;
+  width: 220px;
+  height: 120px;
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 60px / 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении */
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 192, 203, 0.7);
+}
+
+/* Картинки кнопок */
+.left-button {
+  background-image: url("button111.jpg");
+}
+
+.right-button {
+  background-image: url("button111.jpg");
+}
+
+/* Надпись между кнопками */
+.text-between {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  color: white;
+  margin: 0 20px;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}

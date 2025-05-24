@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("zlojfenek1111111.jpg"); /* Заменишь на свою картинку */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* Контент по центру */
+.content {
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+/* Кнопка "назад" внизу */
+.back-button {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px;
+  background-image: url("photo_2025-05-24_22-29-42.jpg"); /* Своё изображение кнопки */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* Анимация для слова ВАФЛЯ */
+.animated-waffle {
+  font-size: 72px;
+  font-weight: bold;
+  color: red;
+  animation: pulseMove 2s infinite ease-in-out;
+  user-select: none;
+  text-shadow: 0 0 8px rgba(255,0,0,0.8);
+}
+
+/* Анимация мигания + движения */
+@keyframes pulseMove {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+    text-shadow: 0 0 8px rgba(255,0,0,0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(10px) rotate(5deg);
+    text-shadow: 0 0 20px rgba(255,0,0,1);
+  }
+}
